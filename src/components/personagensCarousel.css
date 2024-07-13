@@ -1,0 +1,60 @@
+.personagens-div {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.personagens-div::before,
+.personagens-div::after {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.personagens-div::before {
+    left: 0;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
+.personagens-div::after {
+    right: 0;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+}
+
+.personagens-div:hover .personagens-slide {
+    animation-play-state: paused;
+}
+
+.personagens-slide {
+    display: inline-flex;
+    animation: scroll 15s linear infinite;
+}
+
+.personagens-slide img {
+    object-fit: cover;
+    cursor: pointer;
+    width: 200px;
+    height: 300px;
+    margin: 0 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.personagens-slide img:last-child {
+    margin-right: 0px;
+}
+
+.personagens-slide img:hover {
+    width: 500px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-200px * 12 - 120px));
+    }
+}
