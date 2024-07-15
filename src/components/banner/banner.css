@@ -1,0 +1,15 @@
+.banner {
+    background-image: linear-gradient(to right, var(--textColor), transparent), url("../../assets/img/Banner.webp");
+    background-color: var(--textColor);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 70%;
+    color: #f4f4f9;
+    height: 85vh;
+}
+
+.banner-text {
+    width: 50%;
+    text-align: start;
+}
+

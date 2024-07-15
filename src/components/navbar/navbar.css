@@ -1,0 +1,15 @@
+.navbar {
+    padding: 0;
+    height: auto;
+}
+
+.nav-link {
+    padding: 0;
+    transition: .0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    font-weight: 500;
+    color: var(--backgroundColor);
+    background-color: var(--textColor);
+}

@@ -1,9 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import NavbarDemonSlayer from './components/navbar';
-import Banner from './components/banner';
-import PersonagensCarousel from './components/personagensCarousel';
-import Onis from './components/onis';
+import theme from './theme';
+import NavbarDemonSlayer from './components/navbar/navbar';
+import Banner from './components/banner/banner';
+import PersonagensCarousel from './components/personagensCarousel/personagensCarousel';
+import Onis from './components/onis/onis';
+
+const setCSSVariables = (theme) => {
+  Object.keys(theme).forEach(key => {
+    document.documentElement.style.setProperty(`--${key}`, theme[key]);
+  });
+};
+setCSSVariables(theme);
 
 function App() {
   return (
