@@ -3,9 +3,9 @@
     background-color: var(--textColor);
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 70%;
+    background-size: 80%;
     color: #f4f4f9;
-    height: 85vh;
+    height: 650px;
 }
 
 .banner-text {

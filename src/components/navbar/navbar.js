@@ -5,7 +5,7 @@ import './navbar.css';
 const NavbarDemonSlayer = () => {
     return (
         <Navbar bg="light" expand="lg" fixed="top">
-            <Navbar.Toggle className="ms-auto me-4" aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle className="ms-auto me-4" aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mx-auto justify-content-center align-items-center">
                     <Nav.Link className="p-3" href="#inicio">Início</Nav.Link>
