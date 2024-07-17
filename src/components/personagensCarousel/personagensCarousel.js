@@ -28,7 +28,7 @@ const PersonagensCarousel = () => {
                 autoplay={{delay: 5000, pauseOnMouseEnter: true}}
             >
                 {personagens.map((personagem, key) => (
-                    <SwiperSlide key={key} className="d-flex container-fluid">
+                    <SwiperSlide key={key} className="d-flex container-fluid swiper-slide-img">
                         <img
                             className="rounded-4 ms-5 w-50"
                             src={personagem.image}

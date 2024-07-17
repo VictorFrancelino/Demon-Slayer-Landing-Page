@@ -1,4 +1,9 @@
-.onis-faixa {
-    background-color: #0A060E;
-    color: #f4f4f9;
+.container-onis {
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+}
+
+.div-oni img {
+    object-fit: cover;
+    height: 350px;
 }

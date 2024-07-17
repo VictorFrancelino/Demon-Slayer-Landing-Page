@@ -5,6 +5,8 @@ import NavbarDemonSlayer from './components/navbar/navbar';
 import Banner from './components/banner/banner';
 import PersonagensCarousel from './components/personagensCarousel/personagensCarousel';
 import Onis from './components/onis/onis';
+import Pilares from './components/pilares/pilares';
+import Kizukis from './components/kizukis/kizukis';
 
 const setCSSVariables = (theme) => {
   Object.keys(theme).forEach(key => {
@@ -19,8 +21,8 @@ function App() {
       <NavbarDemonSlayer />
       <Banner />
       <PersonagensCarousel />
-      <Onis/>
-      <header className="App-header"></header>
+      <Onis />
+      <Pilares />
     </div>
   );
 }
